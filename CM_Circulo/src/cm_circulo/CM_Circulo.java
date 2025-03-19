@@ -10,11 +10,52 @@ package cm_circulo;
  */
 public class CM_Circulo {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    int Id;
+    double Radio;
+    String color;
+
+    //constructor
+    public CM_Circulo(int Id, double Radio, String color) {
+        this.Id = Id;
+        this.Radio = Radio;
+        this.color = color;
+    }
+
+
+    //getters 
+    public int getId() {
+        return Id;
+    }
+
+    public double getRadio() {
+        return Radio;
+    }
+
+    public String getColor() {
+        return color;
     }
     
+    // setters
+
+    public void setId(int Id) {
+        this.Id = Id;
+    }
+
+    public void setRadio(double Radio) {
+        this.Radio = Radio;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
+    
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("CM_Circulo{");
+        sb.append('}');
+        return sb.toString();
+    }
+
 }
