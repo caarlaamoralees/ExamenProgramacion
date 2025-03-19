@@ -7,6 +7,7 @@ package cm_circulo;
 /**
  *
  * @author carlamorales
+ * @version 1.0
  */
 public class CM_Circulo {
 
@@ -15,14 +16,12 @@ public class CM_Circulo {
     String color;
 
     //constructor
-    public CM_Circulo() {
-    }
-
     public CM_Circulo(int Id, double Radio, String color) {
         this.Id = Id;
         this.Radio = Radio;
         this.color = color;
     }
+
 
     //getters 
     public int getId() {
@@ -36,8 +35,9 @@ public class CM_Circulo {
     public String getColor() {
         return color;
     }
-
+    
     // setters
+
     public void setId(int Id) {
         this.Id = Id;
     }
@@ -49,7 +49,8 @@ public class CM_Circulo {
     public void setColor(String color) {
         this.color = color;
     }
-
+    
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -58,10 +59,14 @@ public class CM_Circulo {
         return sb.toString();
     }
 
+<<<<<<< OURS
+    // calcular el area del circulo
     public double calcularAreaCirculo() {
         double radio1 = this.getRadio();
         double area2 = radio1 * 3.14;
         return area2;
     }
 
+=======
+>>>>>>> THEIRS
 }
